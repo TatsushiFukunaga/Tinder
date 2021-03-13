@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		43EEF14625FCBDB60051660D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14525FCBDB60051660D /* AppDelegate.swift */; };
 		43EEF14825FCBDB60051660D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14725FCBDB60051660D /* SceneDelegate.swift */; };
-		43EEF14A25FCBDB70051660D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14925FCBDB70051660D /* ViewController.swift */; };
+		43EEF14A25FCBDB70051660D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14925FCBDB70051660D /* HomeViewController.swift */; };
 		43EEF14D25FCBDB70051660D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EEF14B25FCBDB70051660D /* Main.storyboard */; };
 		43EEF14F25FCBDBC0051660D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EEF14E25FCBDBC0051660D /* Assets.xcassets */; };
 		43EEF15225FCBDBC0051660D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EEF15025FCBDBC0051660D /* LaunchScreen.storyboard */; };
+		43EEF16025FCFE2B0051660D /* BottomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF15F25FCFE2B0051660D /* BottomControlView.swift */; };
+		43EEF16625FD15BE0051660D /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF16525FD15BD0051660D /* UIImage-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43EEF14225FCBDB60051660D /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EEF14525FCBDB60051660D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EEF14725FCBDB60051660D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43EEF14925FCBDB70051660D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43EEF14925FCBDB70051660D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		43EEF14C25FCBDB70051660D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43EEF14E25FCBDBC0051660D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43EEF15125FCBDBC0051660D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43EEF15325FCBDBC0051660D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43EEF15F25FCFE2B0051660D /* BottomControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlView.swift; sourceTree = "<group>"; };
+		43EEF16525FD15BD0051660D /* UIImage-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		43EEF14425FCBDB60051660D /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
+				43EEF16425FD159A0051660D /* Extensions */,
+				43EEF15E25FCFDE40051660D /* Views */,
+				43EEF15C25FCFC880051660D /* ViewControllers */,
 				43EEF14525FCBDB60051660D /* AppDelegate.swift */,
 				43EEF14725FCBDB60051660D /* SceneDelegate.swift */,
-				43EEF14925FCBDB70051660D /* ViewController.swift */,
 				43EEF14B25FCBDB70051660D /* Main.storyboard */,
 				43EEF14E25FCBDBC0051660D /* Assets.xcassets */,
 				43EEF15025FCBDBC0051660D /* LaunchScreen.storyboard */,
 				43EEF15325FCBDBC0051660D /* Info.plist */,
 			);
 			path = Tinder;
+			sourceTree = "<group>";
+		};
+		43EEF15C25FCFC880051660D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43EEF14925FCBDB70051660D /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43EEF15E25FCFDE40051660D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43EEF15F25FCFE2B0051660D /* BottomControlView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43EEF16425FD159A0051660D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43EEF16525FD15BD0051660D /* UIImage-Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43EEF14A25FCBDB70051660D /* ViewController.swift in Sources */,
+				43EEF14A25FCBDB70051660D /* HomeViewController.swift in Sources */,
 				43EEF14625FCBDB60051660D /* AppDelegate.swift in Sources */,
 				43EEF14825FCBDB60051660D /* SceneDelegate.swift in Sources */,
+				43EEF16025FCFE2B0051660D /* BottomControlView.swift in Sources */,
+				43EEF16625FD15BE0051660D /* UIImage-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,8 @@
 		43672BC625FE0EB200EB888E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43672BC525FE0EB200EB888E /* GoogleService-Info.plist */; };
 		43672BD625FE115300EB888E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BD525FE115300EB888E /* RegisterViewController.swift */; };
 		43672BDC25FE151400EB888E /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BDB25FE151400EB888E /* RegisterTextField.swift */; };
+		43672BDF25FE1B6400EB888E /* RegisterTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BDE25FE1B6400EB888E /* RegisterTitleLabel.swift */; };
+		43672BE225FE4E5B00EB888E /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BE125FE4E5B00EB888E /* RegisterButton.swift */; };
 		43EEF14625FCBDB60051660D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14525FCBDB60051660D /* AppDelegate.swift */; };
 		43EEF14825FCBDB60051660D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14725FCBDB60051660D /* SceneDelegate.swift */; };
 		43EEF14A25FCBDB70051660D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14925FCBDB70051660D /* HomeViewController.swift */; };
@@ -43,6 +45,8 @@
 		43672BC525FE0EB200EB888E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43672BD525FE115300EB888E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		43672BDB25FE151400EB888E /* RegisterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
+		43672BDE25FE1B6400EB888E /* RegisterTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTitleLabel.swift; sourceTree = "<group>"; };
+		43672BE125FE4E5B00EB888E /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
 		43EEF14225FCBDB60051660D /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EEF14525FCBDB60051660D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EEF14725FCBDB60051660D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				43672BDB25FE151400EB888E /* RegisterTextField.swift */,
+				43672BDE25FE1B6400EB888E /* RegisterTitleLabel.swift */,
+				43672BE125FE4E5B00EB888E /* RegisterButton.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43672BE225FE4E5B00EB888E /* RegisterButton.swift in Sources */,
 				43672BA925FDB1D100EB888E /* TopControlView.swift in Sources */,
 				43EEF14A25FCBDB70051660D /* HomeViewController.swift in Sources */,
+				43672BDF25FE1B6400EB888E /* RegisterTitleLabel.swift in Sources */,
 				43672BBD25FDFEEC00EB888E /* CardInfoLabel.swift in Sources */,
 				43EEF14625FCBDB60051660D /* AppDelegate.swift in Sources */,
 				43672BB425FDD4E700EB888E /* UIView-Extension.swift in Sources */,

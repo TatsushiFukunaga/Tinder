@@ -9,16 +9,16 @@ import UIKit
 
 class BottomControlView: UIView {
     
-    let view1 = BottomButtonView(frame: .zero, width: 50, imageName: "reload")
-    let view2 = BottomButtonView(frame: .zero, width: 60, imageName: "nope")
-    let view3 = BottomButtonView(frame: .zero, width: 50, imageName: "superlike")
-    let view4 = BottomButtonView(frame: .zero, width: 60, imageName: "like")
-    let view5 = BottomButtonView(frame: .zero, width: 50, imageName: "boost")
+    let reloadView = BottomButtonView(frame: .zero, width: 50, imageName: "reload")
+    let nopeView = BottomButtonView(frame: .zero, width: 60, imageName: "nope")
+    let superlikeView = BottomButtonView(frame: .zero, width: 50, imageName: "superlike")
+    let likeView = BottomButtonView(frame: .zero, width: 60, imageName: "like")
+    let boostView = BottomButtonView(frame: .zero, width: 50, imageName: "boost")
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        let baseStackView = UIStackView(arrangedSubviews: [view1, view2, view3, view4, view5])
+        let baseStackView = UIStackView(arrangedSubviews: [reloadView, nopeView, superlikeView, likeView, boostView])
         baseStackView.axis = .horizontal
         baseStackView.distribution = .fillEqually
         baseStackView.spacing = 10
@@ -28,9 +28,9 @@ class BottomControlView: UIView {
         [baseStackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
          baseStackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
          baseStackView.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
-         baseStackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
-         
+         baseStackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -10)
         ].forEach { $0.isActive = true }
+        
     }
     
     required init?(coder: NSCoder) {
@@ -62,7 +62,8 @@ class BottomButtonView: UIView {
         [button?.centerYAnchor.constraint(equalTo: centerYAnchor),
          button?.centerXAnchor.constraint(equalTo: centerXAnchor),
          button?.widthAnchor.constraint(equalToConstant: width),
-         button?.heightAnchor.constraint(equalToConstant: width)].forEach { $0?.isActive = true }
+         button?.heightAnchor.constraint(equalToConstant: width)
+        ].forEach { $0?.isActive = true }
         
     }
     
@@ -89,7 +90,6 @@ class BottomButton: UIButton {
                     self.layoutIfNeeded()
                 }
             }
-            
         }
     }
     
@@ -100,4 +100,5 @@ class BottomButton: UIButton {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
 }

@@ -14,6 +14,9 @@
 		43672BB425FDD4E700EB888E /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BB325FDD4E700EB888E /* UIView-Extension.swift */; };
 		43672BB725FDDCF300EB888E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BB625FDDCF300EB888E /* CardView.swift */; };
 		43672BBA25FDF32C00EB888E /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BB925FDF32C00EB888E /* UIColor-Extension.swift */; };
+		43672BBD25FDFEEC00EB888E /* CardInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BBC25FDFEEC00EB888E /* CardInfoLabel.swift */; };
+		43672BC025FE042100EB888E /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BBF25FE042100EB888E /* UIButton-Extension.swift */; };
+		43672BC325FE059100EB888E /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BC225FE059100EB888E /* CardImageView.swift */; };
 		43EEF14625FCBDB60051660D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14525FCBDB60051660D /* AppDelegate.swift */; };
 		43EEF14825FCBDB60051660D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14725FCBDB60051660D /* SceneDelegate.swift */; };
 		43EEF14A25FCBDB70051660D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14925FCBDB70051660D /* HomeViewController.swift */; };
@@ -29,6 +32,9 @@
 		43672BB325FDD4E700EB888E /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
 		43672BB625FDDCF300EB888E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		43672BB925FDF32C00EB888E /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		43672BBC25FDFEEC00EB888E /* CardInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoLabel.swift; sourceTree = "<group>"; };
+		43672BBF25FE042100EB888E /* UIButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		43672BC225FE059100EB888E /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		43EEF14225FCBDB60051660D /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EEF14525FCBDB60051660D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EEF14725FCBDB60051660D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,8 @@
 				43EEF15F25FCFE2B0051660D /* BottomControlView.swift */,
 				43672BA825FDB1D100EB888E /* TopControlView.swift */,
 				43672BB625FDDCF300EB888E /* CardView.swift */,
+				43672BBC25FDFEEC00EB888E /* CardInfoLabel.swift */,
+				43672BC225FE059100EB888E /* CardImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +119,7 @@
 				43EEF16525FD15BD0051660D /* UIImage-Extension.swift */,
 				43672BB325FDD4E700EB888E /* UIView-Extension.swift */,
 				43672BB925FDF32C00EB888E /* UIColor-Extension.swift */,
+				43672BBF25FE042100EB888E /* UIButton-Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,12 +204,15 @@
 			files = (
 				43672BA925FDB1D100EB888E /* TopControlView.swift in Sources */,
 				43EEF14A25FCBDB70051660D /* HomeViewController.swift in Sources */,
+				43672BBD25FDFEEC00EB888E /* CardInfoLabel.swift in Sources */,
 				43EEF14625FCBDB60051660D /* AppDelegate.swift in Sources */,
 				43672BB425FDD4E700EB888E /* UIView-Extension.swift in Sources */,
 				43672BBA25FDF32C00EB888E /* UIColor-Extension.swift in Sources */,
+				43672BC025FE042100EB888E /* UIButton-Extension.swift in Sources */,
 				43EEF14825FCBDB60051660D /* SceneDelegate.swift in Sources */,
 				43EEF16025FCFE2B0051660D /* BottomControlView.swift in Sources */,
 				43672BB725FDDCF300EB888E /* CardView.swift in Sources */,
+				43672BC325FE059100EB888E /* CardImageView.swift in Sources */,
 				43EEF16625FD15BE0051660D /* UIImage-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

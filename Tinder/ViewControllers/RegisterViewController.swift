@@ -13,7 +13,7 @@ import FirebaseFirestore
 class RegisterViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
-    private let viewModel = RegisterViewModel()
+    private let viewModel = RegiserViewModel()
     
     // MARK: - UIViews
     private let titleLabel = RegisterTitleLabel()
@@ -27,7 +27,7 @@ class RegisterViewController: UIViewController {
         
         setupGradientLayer()
         setupLayout()
-        setupBindings()
+        setupBindins()
     }
     
     // MARK: - Methods
@@ -59,12 +59,14 @@ class RegisterViewController: UIViewController {
         titleLabel.anchor(bottom: baseStackView.topAnchor, centerX: view.centerXAnchor, bottomPadding: 20)
     }
     
-    private func setupBindings() {
+    private func setupBindins() {
         
+        // textFieldのbinding
         nameTextField.rx.text
             .asDriver()
             .drive { [weak self] text in
                 self?.viewModel.nameTextInput.onNext(text ?? "")
+                // textの情報ハンドル
             }
             .disposed(by: disposeBag)
         
@@ -72,6 +74,7 @@ class RegisterViewController: UIViewController {
             .asDriver()
             .drive { [weak self] text in
                 self?.viewModel.emailTextInput.onNext(text ?? "")
+                // textの情報ハンドル
             }
             .disposed(by: disposeBag)
         
@@ -79,51 +82,39 @@ class RegisterViewController: UIViewController {
             .asDriver()
             .drive { [weak self] text in
                 self?.viewModel.passwordTextInput.onNext(text ?? "")
+                // textの情報ハンドル
             }
             .disposed(by: disposeBag)
         
         registerButton.rx.tap
             .asDriver()
-            .drive { [weak self]  _ in
+            .drive { [weak self] _ in
                 // 登録時の処理
-                self?.createUserToFireAuth()
+                self?.createUser()
             }
             .disposed(by: disposeBag)
         
+        // viewmodelのbinding
+        viewModel.validRegisterDriver
+            .drive { validAll in
+                self.registerButton.isEnabled = validAll
+                self.registerButton.backgroundColor = validAll ? .rgb(red: 227, green: 48, blue: 78) : .init(white: 0.7, alpha: 1)
+            }
+            .disposed(by: disposeBag)
     }
     
-    private func createUserToFireAuth() {
+    private func createUser() {
+        let email = emailTextField.text
+        let password = passwordTextField.text
+        let name = nameTextField.text
         
-        guard let email = emailTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
-        
-        Auth.auth().createUser(withEmail: email, password: password) { (auth, err) in
-            if let err = err {
-                print("auth情報の保存に失敗:", err)
-                return
+        Auth.createUserToFireAuth(email: email, password: password, name: name) { success in
+            if success {
+                print("処理が完了")
+                self.dismiss(animated: true)
+            } else {
+                
             }
-            guard let uid = auth?.user.uid else { return }
-            self.setUserDataToFirestore(email: email, uid: uid)
-        }
-        
-    }
-    
-    private func setUserDataToFirestore(email: String, uid: String) {
-        guard let name = nameTextField.text else { return }
-        
-        let document = [
-            "name": name,
-            "email": email,
-            "createAt": Timestamp()
-        ] as [String : Any]
-        
-        Firestore.firestore().collection("users").document(uid).setData(document) { (err) in
-            if let err = err {
-                print("ユーザー情報のfirestoreへの保存に成功", err)
-                return
-            }
-            print("ユーザー情報のfirestoreへの保存に成功")
-            
         }
         
     }

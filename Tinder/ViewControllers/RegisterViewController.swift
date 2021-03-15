@@ -8,10 +8,12 @@
 import UIKit
 import RxSwift
 import FirebaseAuth
+import FirebaseFirestore
 
 class RegisterViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
+    private let viewModel = RegisterViewModel()
     
     // MARK: - UIViews
     private let titleLabel = RegisterTitleLabel()
@@ -62,21 +64,21 @@ class RegisterViewController: UIViewController {
         nameTextField.rx.text
             .asDriver()
             .drive { [weak self] text in
-                
+                self?.viewModel.nameTextInput.onNext(text ?? "")
             }
             .disposed(by: disposeBag)
         
         emailTextField.rx.text
             .asDriver()
             .drive { [weak self] text in
-                
+                self?.viewModel.emailTextInput.onNext(text ?? "")
             }
             .disposed(by: disposeBag)
         
         passwordTextField.rx.text
             .asDriver()
             .drive { [weak self] text in
-                
+                self?.viewModel.passwordTextInput.onNext(text ?? "")
             }
             .disposed(by: disposeBag)
         
@@ -101,7 +103,27 @@ class RegisterViewController: UIViewController {
                 return
             }
             guard let uid = auth?.user.uid else { return }
-            print("auth情報の保存に成功:", uid)
+            self.setUserDataToFirestore(email: email, uid: uid)
+        }
+        
+    }
+    
+    private func setUserDataToFirestore(email: String, uid: String) {
+        guard let name = nameTextField.text else { return }
+        
+        let document = [
+            "name": name,
+            "email": email,
+            "createAt": Timestamp()
+        ] as [String : Any]
+        
+        Firestore.firestore().collection("users").document(uid).setData(document) { (err) in
+            if let err = err {
+                print("ユーザー情報のfirestoreへの保存に成功", err)
+                return
+            }
+            print("ユーザー情報のfirestoreへの保存に成功")
+            
         }
         
     }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43255B3D25FEED2F00D2587F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43255B3C25FEED2F00D2587F /* RegisterViewModel.swift */; };
+		4334E42F25FF9E5C001F49AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334E42E25FF9E5C001F49AF /* LoginViewController.swift */; };
 		43672BA925FDB1D100EB888E /* TopControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BA825FDB1D100EB888E /* TopControlView.swift */; };
 		43672BAD25FDBD7600EB888E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 43672BAC25FDBD7600EB888E /* RxSwift */; };
 		43672BAF25FDBD7600EB888E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 43672BAE25FDBD7600EB888E /* RxCocoa */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		4096E49774CB4EDBEDD65FB4 /* Pods-Tinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder.release.xcconfig"; path = "Target Support Files/Pods-Tinder/Pods-Tinder.release.xcconfig"; sourceTree = "<group>"; };
 		43255B3C25FEED2F00D2587F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		4334E42E25FF9E5C001F49AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43672BA825FDB1D100EB888E /* TopControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopControlView.swift; sourceTree = "<group>"; };
 		43672BB325FDD4E700EB888E /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
 		43672BB625FDDCF300EB888E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				43EEF14925FCBDB70051660D /* HomeViewController.swift */,
 				43672BD525FE115300EB888E /* RegisterViewController.swift */,
+				4334E42E25FF9E5C001F49AF /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				43672BA925FDB1D100EB888E /* TopControlView.swift in Sources */,
 				43EEF14A25FCBDB70051660D /* HomeViewController.swift in Sources */,
 				43672BDF25FE1B6400EB888E /* RegisterTitleLabel.swift in Sources */,
+				4334E42F25FF9E5C001F49AF /* LoginViewController.swift in Sources */,
 				43672BBD25FDFEEC00EB888E /* CardInfoLabel.swift in Sources */,
 				43EEF14625FCBDB60051660D /* AppDelegate.swift in Sources */,
 				43672BB425FDD4E700EB888E /* UIView-Extension.swift in Sources */,

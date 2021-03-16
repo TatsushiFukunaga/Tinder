@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431E83F826006F7300A81624 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 431E83F726006F7300A81624 /* PKHUD */; };
+		431E83FC260078E600A81624 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431E83FB260078E600A81624 /* User.swift */; };
 		43255B3D25FEED2F00D2587F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43255B3C25FEED2F00D2587F /* RegisterViewModel.swift */; };
 		4334E42F25FF9E5C001F49AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334E42E25FF9E5C001F49AF /* LoginViewController.swift */; };
 		43672BA925FDB1D100EB888E /* TopControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BA825FDB1D100EB888E /* TopControlView.swift */; };
@@ -38,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		4096E49774CB4EDBEDD65FB4 /* Pods-Tinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder.release.xcconfig"; path = "Target Support Files/Pods-Tinder/Pods-Tinder.release.xcconfig"; sourceTree = "<group>"; };
+		431E83FB260078E600A81624 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		43255B3C25FEED2F00D2587F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		4334E42E25FF9E5C001F49AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43672BA825FDB1D100EB888E /* TopControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopControlView.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 				43672BB125FDBD7600EB888E /* RxRelay in Frameworks */,
 				43672BAF25FDBD7600EB888E /* RxCocoa in Frameworks */,
 				43672BAD25FDBD7600EB888E /* RxSwift in Frameworks */,
+				431E83F826006F7300A81624 /* PKHUD in Frameworks */,
 				D59A66EE2BE80007CECF8C64 /* Pods_Tinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431E83FA260078D600A81624 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				431E83FB260078E600A81624 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		43255B3B25FEECFD00D2587F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		43EEF14425FCBDB60051660D /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
+				431E83FA260078D600A81624 /* Models */,
 				43EEF16425FD159A0051660D /* Extensions */,
 				43EEF15E25FCFDE40051660D /* Views */,
 				43255B3B25FEECFD00D2587F /* ViewModel */,
@@ -218,6 +231,7 @@
 				43672BAC25FDBD7600EB888E /* RxSwift */,
 				43672BAE25FDBD7600EB888E /* RxCocoa */,
 				43672BB025FDBD7600EB888E /* RxRelay */,
+				431E83F726006F7300A81624 /* PKHUD */,
 			);
 			productName = Tinder;
 			productReference = 43EEF14225FCBDB60051660D /* Tinder.app */;
@@ -248,6 +262,7 @@
 			mainGroup = 43EEF13925FCBDB60051660D;
 			packageReferences = (
 				43672BAB25FDBD7600EB888E /* XCRemoteSwiftPackageReference "RxSwift" */,
+				431E83F626006F7300A81624 /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 43EEF14325FCBDB60051660D /* Products */;
 			projectDirPath = "";
@@ -327,6 +342,7 @@
 				43672BBD25FDFEEC00EB888E /* CardInfoLabel.swift in Sources */,
 				43EEF14625FCBDB60051660D /* AppDelegate.swift in Sources */,
 				43672BB425FDD4E700EB888E /* UIView-Extension.swift in Sources */,
+				431E83FC260078E600A81624 /* User.swift in Sources */,
 				43672BBA25FDF32C00EB888E /* UIColor-Extension.swift in Sources */,
 				43C1A00125FF08D1007E4261 /* Firebase-Extension.swift in Sources */,
 				43672BC025FE042100EB888E /* UIButton-Extension.swift in Sources */,
@@ -543,6 +559,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		431E83F626006F7300A81624 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 		43672BAB25FDBD7600EB888E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -554,6 +578,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		431E83F726006F7300A81624 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 431E83F626006F7300A81624 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
 		43672BAC25FDBD7600EB888E /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 43672BAB25FDBD7600EB888E /* XCRemoteSwiftPackageReference "RxSwift" */;

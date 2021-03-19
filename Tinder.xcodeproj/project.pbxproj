@@ -11,6 +11,9 @@
 		431E83FC260078E600A81624 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431E83FB260078E600A81624 /* User.swift */; };
 		43255B3D25FEED2F00D2587F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43255B3C25FEED2F00D2587F /* RegisterViewModel.swift */; };
 		4334E42F25FF9E5C001F49AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334E42E25FF9E5C001F49AF /* LoginViewController.swift */; };
+		43458E692604ED3A007659D5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43458E682604ED3A007659D5 /* ProfileViewController.swift */; };
+		43458E6D2604F2FE007659D5 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43458E6C2604F2FE007659D5 /* ProfileImageView.swift */; };
+		43458E702604F588007659D5 /* ProfileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43458E6F2604F588007659D5 /* ProfileLabel.swift */; };
 		43672BA925FDB1D100EB888E /* TopControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BA825FDB1D100EB888E /* TopControlView.swift */; };
 		43672BAD25FDBD7600EB888E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 43672BAC25FDBD7600EB888E /* RxSwift */; };
 		43672BAF25FDBD7600EB888E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 43672BAE25FDBD7600EB888E /* RxCocoa */; };
@@ -43,6 +46,9 @@
 		431E83FB260078E600A81624 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		43255B3C25FEED2F00D2587F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		4334E42E25FF9E5C001F49AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		43458E682604ED3A007659D5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		43458E6C2604F2FE007659D5 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		43458E6F2604F588007659D5 /* ProfileLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLabel.swift; sourceTree = "<group>"; };
 		43672BA825FDB1D100EB888E /* TopControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopControlView.swift; sourceTree = "<group>"; };
 		43672BB325FDD4E700EB888E /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
 		43672BB625FDDCF300EB888E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -100,6 +106,15 @@
 				43255B3C25FEED2F00D2587F /* RegisterViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		43458E6B2604F2DE007659D5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				43458E6C2604F2FE007659D5 /* ProfileImageView.swift */,
+				43458E6F2604F588007659D5 /* ProfileLabel.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		43672BD825FE146800EB888E /* Home */ = {
@@ -167,6 +182,7 @@
 				43EEF14925FCBDB70051660D /* HomeViewController.swift */,
 				43672BD525FE115300EB888E /* RegisterViewController.swift */,
 				4334E42E25FF9E5C001F49AF /* LoginViewController.swift */,
+				43458E682604ED3A007659D5 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -174,6 +190,7 @@
 		43EEF15E25FCFDE40051660D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				43458E6B2604F2DE007659D5 /* Profile */,
 				43672BDA25FE14F700EB888E /* Register */,
 				43672BD825FE146800EB888E /* Home */,
 			);
@@ -350,8 +367,11 @@
 				43EEF14825FCBDB60051660D /* SceneDelegate.swift in Sources */,
 				43EEF16025FCFE2B0051660D /* BottomControlView.swift in Sources */,
 				43672BB725FDDCF300EB888E /* CardView.swift in Sources */,
+				43458E6D2604F2FE007659D5 /* ProfileImageView.swift in Sources */,
+				43458E702604F588007659D5 /* ProfileLabel.swift in Sources */,
 				43672BDC25FE151400EB888E /* RegisterTextField.swift in Sources */,
 				43672BD625FE115300EB888E /* RegisterViewController.swift in Sources */,
+				43458E692604ED3A007659D5 /* ProfileViewController.swift in Sources */,
 				43672BC325FE059100EB888E /* CardImageView.swift in Sources */,
 				43EEF16625FD15BE0051660D /* UIImage-Extension.swift in Sources */,
 			);

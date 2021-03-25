@@ -30,6 +30,8 @@
 		43672BDF25FE1B6400EB888E /* RegisterTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BDE25FE1B6400EB888E /* RegisterTitleLabel.swift */; };
 		43672BE225FE4E5B00EB888E /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43672BE125FE4E5B00EB888E /* RegisterButton.swift */; };
 		43C1A00125FF08D1007E4261 /* Firebase-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C1A00025FF08D1007E4261 /* Firebase-Extension.swift */; };
+		43EAB52A260CAD2700C86168 /* ProfileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EAB529260CAD2700C86168 /* ProfileTextField.swift */; };
+		43EAB52E260CDC5000C86168 /* InfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EAB52D260CDC5000C86168 /* InfoCollectionViewCell.swift */; };
 		43EEF14625FCBDB60051660D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14525FCBDB60051660D /* AppDelegate.swift */; };
 		43EEF14825FCBDB60051660D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14725FCBDB60051660D /* SceneDelegate.swift */; };
 		43EEF14A25FCBDB70051660D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF14925FCBDB70051660D /* HomeViewController.swift */; };
@@ -62,6 +64,8 @@
 		43672BDE25FE1B6400EB888E /* RegisterTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTitleLabel.swift; sourceTree = "<group>"; };
 		43672BE125FE4E5B00EB888E /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
 		43C1A00025FF08D1007E4261 /* Firebase-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase-Extension.swift"; sourceTree = "<group>"; };
+		43EAB529260CAD2700C86168 /* ProfileTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTextField.swift; sourceTree = "<group>"; };
+		43EAB52D260CDC5000C86168 /* InfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCollectionViewCell.swift; sourceTree = "<group>"; };
 		43EEF14225FCBDB60051660D /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EEF14525FCBDB60051660D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EEF14725FCBDB60051660D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			children = (
 				43458E6C2604F2FE007659D5 /* ProfileImageView.swift */,
 				43458E6F2604F588007659D5 /* ProfileLabel.swift */,
+				43EAB529260CAD2700C86168 /* ProfileTextField.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -139,6 +144,14 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		43EAB52C260CDC3100C86168 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				43EAB52D260CDC5000C86168 /* InfoCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		43EEF13925FCBDB60051660D = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +173,7 @@
 		43EEF14425FCBDB60051660D /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
+				43EAB52C260CDC3100C86168 /* Cells */,
 				431E83FA260078D600A81624 /* Models */,
 				43EEF16425FD159A0051660D /* Extensions */,
 				43EEF15E25FCFDE40051660D /* Views */,
@@ -351,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EAB52E260CDC5000C86168 /* InfoCollectionViewCell.swift in Sources */,
 				43672BE225FE4E5B00EB888E /* RegisterButton.swift in Sources */,
 				43672BA925FDB1D100EB888E /* TopControlView.swift in Sources */,
 				43EEF14A25FCBDB70051660D /* HomeViewController.swift in Sources */,
@@ -362,6 +377,7 @@
 				431E83FC260078E600A81624 /* User.swift in Sources */,
 				43672BBA25FDF32C00EB888E /* UIColor-Extension.swift in Sources */,
 				43C1A00125FF08D1007E4261 /* Firebase-Extension.swift in Sources */,
+				43EAB52A260CAD2700C86168 /* ProfileTextField.swift in Sources */,
 				43672BC025FE042100EB888E /* UIButton-Extension.swift in Sources */,
 				43255B3D25FEED2F00D2587F /* RegisterViewModel.swift in Sources */,
 				43EEF14825FCBDB60051660D /* SceneDelegate.swift in Sources */,
